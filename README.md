@@ -2,7 +2,7 @@
 CRUD
  Backend:
  - Java 8
- - Spring Boot, Rest, JPA
+ - Spring Boot, Rest, Data JPA (Hibernate)
  - Maven
  - JBoss Wildfly
  
