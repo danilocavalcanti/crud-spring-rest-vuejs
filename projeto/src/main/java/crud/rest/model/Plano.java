@@ -2,24 +2,31 @@ package crud.rest.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 /**
  * @author danilocavalcanti
  *
  */
-//@Entity
+@Entity
 public class Plano implements Serializable {
 
 	private static final long serialVersionUID = 7160058287105541964L;
 
-//	@Id
-//	@GeneratedValue
+	@Id
+	@GeneratedValue
 	private Long id;
 
-//	@Column
+	@Column
 	private String nome;
 
-//	@ManyToOne
-//	@JoinColumn(name = "id_cliente")
+	@ManyToOne
+	@JoinColumn(name = "id_cliente")
 	private Cliente cliente;
 
 	public Long getId() {
